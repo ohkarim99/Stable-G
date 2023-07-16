@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;700&display=swap');
+
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     background-color: #242524;
+}
+
+li,a,button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 550;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+   /* width: 300px; /* Set the desired width */
+    /*height: 70px;*/
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer ;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+.caption_text {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    /*background-image: url(background.jpg);*/
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caption_bar {
+    width: 100%;
+    max-width: 700px ;
+    height: 80px;
+    background-color: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.caption_bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.Generate {
+    height: 90%;
+    font-size: 20px;
+}
+
+.loading {
+    margin-top: -50px;
+    width: 100%;
+    display:flex ;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.loading_bar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading_bar .line_box {
+    width: 30%;
+    height: 30px;
+    border: 2px solid #0088a9;
+    border-radius: 20px;
+    
+}
+
+.loading_bar .line_box .line {
+    height:30px ;
+    padding: -5px;
+    border-radius: 20px;
+    background: #0088a9;
+    animation: loading 5s forwards cubic-bezier(0,0,0,0);
+}
+
+@keyframes loading{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
