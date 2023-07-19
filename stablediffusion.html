@@ -23,18 +23,19 @@
 
 <body><i class="fa-sharp fa-regular fa-sparkles" style="color: #ffffff;"></i>
   <div class="caption_text">
-    <form action="" class="caption_bar">
+    <div class="caption_bar">
       <input type="text" placeholder="Enter your caption">
-      <button type="submit" class="Generate">Generate</button>
-    </form>
-  </div>
-
-  <div class="loading">
-    <div class="loading_bar">
-      <div class="line_box">
-        <div class="line"></div>
-      </div>
+      <button class="Generate" id="generate" onclick=appearloading()>Generate</button>
     </div>
   </div>
+    
+  <div class="center" id="loading">
+    <div class="pic_square">
+      <div class="ring"></div>
+      <span class="loadingg">Loading...</span>
+    </div>
+  </div>
+  <script src="stablediffusion.js" ></script>
 </body>
+
 </html>
